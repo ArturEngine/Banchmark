@@ -13,12 +13,29 @@ const styles = StyleSheet.create({
   scrollContainerStyle: {
     flexGrow: 1,
   },
+  rowStyle: {
+    flexDirection: 'row',
+  },
+  redContainerStyle: {
+    backgroundColor: 'red',
+  },
+  blueContainerStyle: {
+    backgroundColor: 'blue',
+  },
 });
 
 export const StyleSheetList = ({data}) => {
   const renderItem = item => (
     <View key={item.id} style={styles.containerStyle}>
       <Text>{item.title}</Text>
+      <View style={styles.rowStyle}>
+        <View style={styles.redContainerStyle}>
+          <Text>{item.title}</Text>
+        </View>
+        <View style={styles.blueContainerStyle}>
+          <Text>{item.title}</Text>
+        </View>
+      </View>
     </View>
   );
 
