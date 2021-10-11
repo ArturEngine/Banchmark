@@ -16,15 +16,13 @@ const ContainerScroll = styled.ScrollView`
 
 const ContainerRed = styled.View`
   background-color: red;
-  height: 100px;
-  background-color: red;
+  flex: 1;
   justify-content: center;
   align-items: center;
 `;
 
 const ContainerBlue = styled.View`
-  background-color: red;
-  height: 100px;
+  flex: 1;
   background-color: red;
   justify-content: center;
   align-items: center;
@@ -32,6 +30,7 @@ const ContainerBlue = styled.View`
 
 const Row = styled.View`
   flex-direction: row;
+  flex: 1;
 `;
 
 export const StyledComponentList = ({data}) => {
